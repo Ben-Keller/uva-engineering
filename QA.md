@@ -11,4 +11,4 @@ Checked November 2, 2026.
 
 The client-preview password is a browser-side courtesy gate, not access control. The complete PDF remains a direct download. This work includes functional and visual checks, not a complete assistive-technology audit or university editorial sign-off.
 
-GitHub repository validation passed on the initial launch commit. Pages configuration was rejected by GitHub (HTTP 422: current plan does not support Pages for this private repository). No deployment workflow has been run.
+GitHub repository validation passed. With user authorization, the repository was made public and GitHub Pages was enabled. The initial deployment succeeded on November 2, 2026: https://github.com/Ben-Keller/uva-engineering/actions/runs/41523511861.

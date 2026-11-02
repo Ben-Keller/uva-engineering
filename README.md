@@ -23,13 +23,13 @@ For the optional browser smoke check, install Playwright locally (`npm install -
 
 ## GitHub Pages
 
-Repository: `Ben-Keller/uva-engineering` (currently private).
+Repository: `Ben-Keller/uva-engineering` (public).
 
-**Launch status:** source is uploaded and automated checks pass. GitHub rejected Pages setup because the current account plan does not support Pages for this private repository. The site is not published. To launch, first make the repository public or use a plan that supports private-repository Pages, then complete the steps below.
+**Launch status:** live at [ben-keller.github.io/uva-engineering](https://ben-keller.github.io/uva-engineering/). GitHub Pages is configured for Actions, and the initial deployment succeeded on November 2, 2026. The client-preview password is **uva**. Future releases remain manual.
 
 - Pushes and pull requests run **Check site**.
 - **Launch client preview** is manual; a source push does not deploy the website.
-- Before launch, select **Settings → Pages → Source → GitHub Actions** in the repository.
+- **Settings → Pages → Source → GitHub Actions** is already configured.
 - Run **Actions → Launch client preview → Run workflow** on `main` when ready to publish.
 - The successful deployment reports the actual site URL. The expected project URL is `https://ben-keller.github.io/uva-engineering/`.
 
