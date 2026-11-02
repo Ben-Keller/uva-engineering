@@ -23,7 +23,9 @@ For the optional browser smoke check, install Playwright locally (`npm install -
 
 ## GitHub Pages
 
-Repository: `Ben-Keller/uva-engineering`.
+Repository: `Ben-Keller/uva-engineering` (currently private).
+
+**Launch status:** source is uploaded and automated checks pass. GitHub rejected Pages setup because the current account plan does not support Pages for this private repository. The site is not published. To launch, first make the repository public or use a plan that supports private-repository Pages, then complete the steps below.
 
 - Pushes and pull requests run **Check site**.
 - **Launch client preview** is manual; a source push does not deploy the website.

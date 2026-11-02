@@ -10,3 +10,5 @@ Checked November 2, 2026.
 - Photos are exported from the original PDF as WebP at quality 84 and native pixel dimensions. No upscaling is used. See `docs/image-audit.json`.
 
 The client-preview password is a browser-side courtesy gate, not access control. The complete PDF remains a direct download. This work includes functional and visual checks, not a complete assistive-technology audit or university editorial sign-off.
+
+GitHub repository validation passed on the initial launch commit. Pages configuration was rejected by GitHub (HTTP 422: current plan does not support Pages for this private repository). No deployment workflow has been run.
