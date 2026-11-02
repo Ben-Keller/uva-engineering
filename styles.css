@@ -156,26 +156,28 @@ body.locked .section-nav{visibility:hidden;pointer-events:none}
 
 
 /* Client review entrance. Report scripts load only after the viewing gate is passed. */
-.preview-locked{overflow:auto}
+.preview-locked{overflow:auto;background:#f7f7f4}
 .preview-locked .skip{display:none}
-.preview-gate{min-height:100svh;background:#071d39;color:#f7f4eb;padding:40px clamp(24px,7vw,110px);display:flex;flex-direction:column;justify-content:space-between;gap:50px;background-image:radial-gradient(ellipse at 100% 0%,#20415c88,transparent 65%)}
+.preview-gate{min-height:100svh;background:#f7f7f4;color:var(--navy);padding:48px 24px;display:grid;place-items:center}
 .preview-gate[hidden]{display:none}
-.preview-wordmark{font-size:13px;line-height:1.05;letter-spacing:.03em;border-left:3px solid #ec7131;padding-left:13px}
-.preview-wordmark b{font-size:19px}
-.preview-intro{width:min(850px,100%);padding:25px 0}
-.preview-kicker{display:block;font-size:10px;letter-spacing:.2em;color:#f2a16f;margin-bottom:30px}
-.preview-intro h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(42px,5.6vw,87px);line-height:1.06;letter-spacing:-.055em}
-.preview-intro h1 em{color:#ed925b;font-style:italic}
-.preview-intro>p{color:#b9c7d4;font-size:16px;line-height:1.7;margin-top:25px}
-#previewForm{margin-top:40px;max-width:540px}
-#previewForm label{display:block;font-size:11px;letter-spacing:.05em;color:#c7d2dc;margin-bottom:10px}
-.preview-input-row{display:flex;gap:10px}
-#previewPassword{width:100%;min-width:0;min-height:50px;background:#ffffff08;border:1px solid #ffffff45;border-radius:3px;padding:12px 14px;color:white;font-size:17px}
-#previewSubmit{white-space:nowrap;border:0;border-radius:3px;background:#ec8c51;color:#071d39;font-size:12px;font-weight:700;padding:12px 22px;min-height:50px}
-#previewSubmit span{margin-left:20px;font-size:17px}
-#previewMessage{min-height:34px;margin-top:12px;font-size:13px;line-height:1.5;color:#f6c9a9}
-.preview-footnote{display:flex;justify-content:space-between;gap:24px;padding-top:20px;border-top:1px solid #ffffff25;font-size:9px;letter-spacing:.15em;color:#9bafc3}
+.preview-intro{width:min(360px,100%)}
+.preview-wordmark{display:flex;align-items:baseline;gap:9px;font-size:14px;font-weight:750;letter-spacing:.02em;margin-bottom:44px}
+.preview-wordmark span{font-weight:400;color:#536070}
+.preview-intro h1{font-family:Georgia,serif;font-weight:400;font-size:38px;line-height:1.15;letter-spacing:-.045em}
+.preview-intro h1 span{display:block;color:#6e7883}
+.preview-kicker{font-size:12px;color:#626d78;margin-top:16px}
+#previewForm{margin-top:32px}
+#previewForm label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.preview-input-row{display:flex;align-items:center;gap:8px;border-bottom:1px solid #b5bcc1;padding-bottom:8px;transition:border-color .2s}
+.preview-input-row:focus-within{border-color:var(--navy)}
+#previewPassword{width:100%;min-width:0;min-height:44px;background:transparent;border:0;border-radius:0;padding:10px 0;color:var(--navy);font-size:16px;outline-offset:4px}
+#previewPassword::placeholder{color:#626d78;font-size:14px;opacity:1}
+#previewPassword:focus-visible{outline:0}
+.preview-input-row:has(#previewPassword:focus-visible){outline:2px solid var(--navy);outline-offset:6px}
+#previewSubmit{flex-shrink:0;display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:50%;background:var(--navy);color:#fff;transition:background .2s}
+#previewSubmit:hover{background:#264569}
+#previewMessage{min-height:40px;margin-top:14px;font-size:12px;line-height:1.5;color:#9a3c22}
 .preview-badge{font-size:8px;letter-spacing:.1em;border:1px solid #8d9aa855;padding:5px 7px;border-radius:2px}
 #lockPreview{background:none;border:0;border-bottom:1px solid currentColor;padding:5px 0;color:inherit;font-size:10px;letter-spacing:.07em}
-.noscript-note{position:fixed;bottom:18px;left:24px;color:#fff;font-size:14px}
-@media(max-width:560px){.preview-gate{padding:30px 24px;gap:30px}.preview-input-row{flex-direction:column}#previewSubmit{display:flex;justify-content:space-between;align-items:center}.preview-footnote{flex-direction:column;gap:8px}.preview-intro>p{font-size:14px}}
+.noscript-note{position:fixed;bottom:18px;left:24px;right:24px;color:var(--navy);font-size:13px;text-align:center}
+@media(prefers-reduced-motion:reduce){.preview-input-row,#previewSubmit{transition:none}}

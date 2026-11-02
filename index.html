@@ -16,10 +16,19 @@
 </head>
 <body class="preview-locked">
   <section class="preview-gate" id="previewGate" aria-labelledby="previewTitle">
-    <div class="preview-wordmark">UVA<br><b>ENGINEERING</b></div>
-    <div class="preview-intro"><span class="preview-kicker">CLIENT PREVIEW · 2026</span><h1 id="previewTitle">Engineering<br>for the <em>greater good.</em></h1><p>A preview of the 2026 Impact Report.<br>Enter your review password to begin.</p>
-      <form id="previewForm"><label for="previewPassword">Review password</label><div class="preview-input-row"><input id="previewPassword" type="password" autocomplete="current-password" required aria-describedby="previewMessage"><button id="previewSubmit" type="submit">Enter report <span aria-hidden="true">↗</span></button></div><p id="previewMessage" role="status" aria-live="polite"></p></form>
-    </div><div class="preview-footnote">DESIGN REVIEW <span>NOT THE PUBLISHED UNIVERSITY REPORT</span></div>
+    <div class="preview-intro">
+      <div class="preview-wordmark">UVA <span>Engineering</span></div>
+      <h1 id="previewTitle">Impact Report <span>2026</span></h1>
+      <p class="preview-kicker">Client preview</p>
+      <form id="previewForm">
+        <label for="previewPassword">Password</label>
+        <div class="preview-input-row">
+          <input id="previewPassword" type="password" placeholder="Enter password" autocomplete="current-password" required aria-describedby="previewMessage">
+          <button id="previewSubmit" type="submit" aria-label="Enter report"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+        <p id="previewMessage" role="status" aria-live="polite"></p>
+      </form>
+    </div>
   </section>
   <a class="skip" href="#about">Skip to content</a>
   <div id="app" inert></div>
