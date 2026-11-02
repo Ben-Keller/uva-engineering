@@ -1,0 +1,11 @@
+{
+  "name": "uva-engineering-impact-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Folio client preview of the UVA Engineering 2026 Impact Report",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
